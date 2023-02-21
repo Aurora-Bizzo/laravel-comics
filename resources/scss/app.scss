@@ -1,5 +1,6 @@
 @use 'resources/scss/_variables.scss' as *;
 @use 'resources/scss/_mixins.scss' as *;
+@import "@fortawesome/fontawesome-free/css/all.css";
 @import '~bootstrap/scss/bootstrap';
 
 //HEADER
@@ -89,6 +90,17 @@
             justify-content: space-between;
             flex-wrap: wrap;
             padding-top: 4rem;
+
+            .comic {
+                max-width: 193px;
+                min-height: 387px;
+            }
+    
+            .series {
+                text-transform: uppercase;
+                color: white;
+                margin: 1rem 0 2rem 0;
+            }
 
             .load-btn {
                 width: 100%;
