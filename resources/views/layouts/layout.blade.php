@@ -33,6 +33,8 @@
         </div>
     </header>
 
+    <div class="jumbotron"></div>
+    
     @yield('content')
 
     <footer>

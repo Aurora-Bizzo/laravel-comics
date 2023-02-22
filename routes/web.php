@@ -72,9 +72,15 @@ Route::get('/', function () {
 
 
 
-Route::get('/details', function () {
+Route::get('/comics/{param}', function ($param) {
 
     $comics = config('db_comics.fumetti');
+    
+    foreach($comics as $key => $item){
+        if($key == $param){
+            $comic_detail = $item;
+        }
+    }
 
     $menu = [
         'CHARACTERS' => '/characters',
@@ -126,5 +132,5 @@ Route::get('/details', function () {
         'DC Power Visa' => '/dc_power_visa',
     ];
 
-    return view('details', compact('menu','dc_comics_footer','shop_footer','dc_footer','sites_footer', 'comics'));
+    return view('details', compact('comic_detail','menu','dc_comics_footer','shop_footer','dc_footer','sites_footer', 'comics'));
 });

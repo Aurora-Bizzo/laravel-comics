@@ -4,6 +4,34 @@
 @import '~bootstrap/scss/bootstrap';
 
 //HEADER
+
+    .border-gray{
+        border-color: rgb(168, 168, 168);
+    }
+
+    .sky-blue {
+        color: $sky-blue;
+    }
+
+    .bg-green {
+        background-color: rgb(67, 181, 67);
+    }
+
+    .w-55 {
+        width: 55%;
+    }
+
+    .blue-bar {
+        height: 80px;
+        background-color: $sky-blue;
+    }
+
+    .detail-img {
+        width: 185px;
+        position: absolute;
+        top: 300px;
+    }
+
     img {
         width: 80px;
     }
