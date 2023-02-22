@@ -12,7 +12,7 @@
                     @foreach($comics as $comic)
                         <div class="comic">
                             <div class="thumb">
-                                <img srs="{{$comic['thumb']}}">
+                                <img class="thumb-img" src="{{$comic['thumb']}}">
                             </div>
                             <div class="series text-white">
                                 {{$comic['title']}}
@@ -21,6 +21,17 @@
                     @endforeach
                     <div class="load-btn">
                         <button><strong>LOAD MORE</strong></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="top-footer">
+            <div class="row">
+                <div class="col-12">
+                    <div class="container-xl">
+                        <ul>
+                            
+                        </ul>
                     </div>
                 </div>
             </div>

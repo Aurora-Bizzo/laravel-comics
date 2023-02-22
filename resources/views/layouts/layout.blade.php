@@ -36,17 +36,6 @@
     @yield('content')
 
     <footer>
-        <div class="top-footer">
-            <div class="row">
-                <div class="col-12">
-                    <div class="container-xl">
-                        <ul>
-                            
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
         <div class="middle-footer">
             <div class="container-xl">
                 <div class="row">
